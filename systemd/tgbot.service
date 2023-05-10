@@ -7,8 +7,8 @@ After=network.target
 User=tgbot
 Group=tgbot
 Type=simple
-WorkingDirectory=/opt/tgbot
-ExecStart=/opt/tgbot/venv/bin/python /opt/tgbot/bot.py
+WorkingDirectory=/opt/tgelegram_bot
+ExecStart=/opt/tgelegram_bot/venv/bin/python /opt/tgelegram_bot/bot.py
 Restart=always
 RestartSec=2s
 
