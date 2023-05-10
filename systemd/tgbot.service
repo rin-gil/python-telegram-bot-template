@@ -1,0 +1,16 @@
+# Configuration for running the bot on a server as a systemd service
+[Unit]
+Description=Telegram Bot daemon
+After=network.target
+
+[Service]
+User=tgbot
+Group=tgbot
+Type=simple
+WorkingDirectory=/opt/tgbot
+ExecStart=/opt/tgbot/venv/bin/python /opt/tgbot/bot.py
+Restart=always
+RestartSec=2s
+
+[Install]
+WantedBy=multi-user.target
