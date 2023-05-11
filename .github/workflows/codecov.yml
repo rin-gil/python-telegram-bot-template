@@ -10,7 +10,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Upload coverage reports to Codecov
       - uses: actions/checkout@master
       - uses: codecov/codecov-action@v3
         with:
