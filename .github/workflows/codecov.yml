@@ -11,4 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
+      - uses: actions/checkout@master
+      - uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: unittests
+          name: codecov-umbrella # optional
+          fail_ci_if_error: true
+          verbose: true
