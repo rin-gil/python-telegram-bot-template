@@ -24,8 +24,11 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt pylint; fi
           cd src
-          mv .* * ../
+          ls -a
+          mv * ../
+          ls -a
           cd ..
+          ls -a
       - name: Run tests
         run: |
           python -m unittest discover -s './tests' -p '*_test.py'
