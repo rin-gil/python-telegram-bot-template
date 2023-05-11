@@ -14,7 +14,7 @@ class TestEnvironment(TestCase):
 
     def setUp(self) -> None:
         """Create an instance of the Environment class"""
-        self.env: Environment = Environment(path_to_env_file=f"{ENV_FILE}.example")
+        self.env: Environment = Environment(path_to_env_file=f"{ENV_FILE}")
 
     @patch("environs.Env.str", MagicMock(return_value="123456:Your-TokEn_ExaMple"))
     def test_get_token_or_exit(self) -> None:
