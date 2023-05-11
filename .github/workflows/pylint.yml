@@ -24,4 +24,4 @@ jobs:
           if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt pylint; fi
       - name: Lint with pylint
         run: |
-          pylint --recursive=y src
+          pylint --recursive=y .
