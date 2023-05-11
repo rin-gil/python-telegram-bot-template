@@ -23,6 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt pylint; fi
+          export PYTHONPATH="${PYTHONPATH}:./src"
       - name: Run tests
         run: |
           python -m unittest discover -s './tests' -p '*_test.py'
