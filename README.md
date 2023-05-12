@@ -85,4 +85,4 @@ A more detailed description and documentation of all bot functions are in the te
 
 ### License
 
-YouTubeMusicDownloadBot is licensed under [MIT](https://github.com/rin-gil/YoutubeMusicDownloadBot/blob/master/LICENCE)
+Available under [MIT license](https://github.com/rin-gil/python-telegram-bot-template/blob/master/LICENCE)
